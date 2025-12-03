@@ -1,1 +1,1 @@
-A brief description of what this project does and who it's for
+The best restaurant-bar in Georgia — great service, delicious food, affordable prices.
