@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    background: none;
+      font-family: "Roboto", sans-serif;
+
+}
+button,input,label{
+    cursor: pointer;
+}
+
+header{
+    position: fixed;
+   text-align: right;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    justify-content: space-between;
+    background-color:  #dfdbd6;;
+   
+   left: 0;
+   right: 0;
+   z-index: 9999999;
+}
+
+header img{
+  max-width: 100px;
+}
+
+header a:hover{
+  transform: scale(1.03);
+  transition: calc(0.2s);
+}
+
+/* From Uiverse.io by Cevorob */ 
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+
+a{
+    font-size: 80px;
+    color: black;
+    
+    
+}
+nav a{
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 20px;
+}
+
+.prosta{
+    height: 200px;
+    background-color: grey;
+}
+.hero{
+    width: 100%;
+    background-image: url(https://nicolasitalian.com/wp-content/uploads/2025/09/Rectangle-17-1.webp);
+    height: 744px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .hero h2{
+    padding: 40px;
+    font-size: 50px;
+    max-width: 40px;
+    
+}
+
+
+.inside2 h3{
+  font-size: 70px;
+
+}
+.inside2{
+  
+  gap: 0px;
+  padding: 50px;
+
+  display: flex;
+  
+  align-items: center;
+  gap: 50px;
+}
+.inside2 a{
+  font-size: 17px;
+  text-decoration: underline;
+  padding: 3px;
+  
+}
+
+
+
+
+
+.inthird img{
+  width: 100%;
+  height: 100%;
+
+}
+.inthird{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.greenback{
+ width: 100%;
+ height: 600px;
+  background-color: rgb(149, 152, 101);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+gap: 50px;
+
+}
+.greenback h3{
+
+  font-size: 70px;
+ 
+
+}
+.greenback a{
+  font-size: 20px;
+  
+  padding: 3px;
+  text-decoration: underline;
+  
+}
+.prosta2{
+  width: 100%;
+  height: 30px;
+}
+
+
+.satauri{
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.satauri h4{
+  font-size: 70px;
+}
+.satauri a{
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.suratebi{
+  height: 100%;
+    width: 100%;
+    display: grid;
+    
+    grid-template-rows: 300px 200px 300px 200px;
+    grid-template-areas:
+    'pirvelisu pirvelisu meoresu meoresu meshvidesu meshvidesu meeqvsesu'
+    'pirvelisu pirvelisu meoresu meoresu meshvidesu meshvidesu meeqvsesu'
+    'pirvelisu pirvelisu mesamesu meotxesu meshvidesu meshvidesu mexutesu'
+    
+    ;
+    
+    gap: 20px;
+    padding: 30px;
+}
+.suratebi img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pirvelisu{
+  grid-area: pirvelisu;
+}
+.meoresu{
+  grid-area: meoresu;
+}
+.mesamesu{
+  grid-area: mesamesu;
+}
+.meotxesu{
+  grid-area: meotxesu;
+}
+.mexutesu{
+  grid-area: mexutesu;
+}
+.meeqvsesu{
+  grid-area: meeqvsesu;
+}
+.meshvidesu{
+  grid-area: meshvidesu;
+}
+
+
+.menuspirveli img{
+  width: 100%;
+  height: 100%;
+
+}
+.menuspirveli{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
+.meoresdiv{
+
+padding: 30px;
+
+
+
+}
+
+.meoresdiv h1{
+  font-size: 55px;
+
+}
+
+.meoresdiv h5{
+ 
+  font-size: 27px;
+  font-weight: 400;
+  margin-top: 30px;
+
+}
+.meoresdiv p{
+  font-weight: 200;
+  border-bottom: 1px solid grey;
+}
+
+
+
+
+
+.ulisdiv{
+  margin-top: 30px;
+  border-bottom: none;
+}
+
+
+.ulisdiv p{
+color: black;
+font-weight: 400;
+border-bottom: none;
+font-size: 20px;
+}
+
+.ulisdiv h6{
+  font-size: 15px;
+
+}
+
+.ulisdiv h5{
+  margin-bottom: 5px;
+
+}
+
+
+.prostaaaa{
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.ulisdiv li{
+  border-bottom: 1px solid grey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.ulisdiv ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prosta3{
+  width: 100%;
+  height: 50px;
+}
+
+
+.about{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  height: 700px;
+  background-color: rgb(149, 152, 101);
+  
+}
+
+.about p{
+  margin-top: 50px;
+  
+}
+.about h2{
+  margin-top: 50px;
+  font-size: 60px;
+
+}
+.about img{
+  margin-top: 40px;
+  max-width: 100px;
+  height: 100px;
+}
+
+
+
+.contactt{
+ display: flex;
+
+
+
+padding: 40px;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 600px;
+ background-color: rgb(149, 152, 101);
+
+}
+.contactt a{
+  font-size: 18px;
+  text-decoration: underline;
+}
+.contactt p{
+  padding: 30px;
+  font-size: 18px;
+  gap: 20px;
+}
+.contactt h2{
+ 
+  padding: 30px;
+  font-size: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    
+    height: 500px;
+background-color: rgb(163, 161, 161);
+text-align: left;
+padding: 50px;
+
+}
+
+.insidefooter {
+    margin-top: 120px;
+    font-size: 20px;
+}
+
+
+
+.PUREMENT{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+   
+   
+}
+.PUREMENT img{
+  max-width: 100px;
+}
+
+.psdiv{
+   display: flex;
+  align-items: center;
+ gap: 20px;
+ justify-content: space-around;
+ width: 100%;
+}
+.psdiv ul{
+  text-align: right;
+}
+
+
+
+.forlast{
+   
+    font-size: 20px;
+}
+li{
+    list-style: none;
+    
+}
+li a{
+    font-size: 20px;
+}
+.forlogo img{
+    max-width: 100px;
+}
+
+.openedmenu{
+    left: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #141414;
+  color: #fff;
+  border: 1px solid #ffffff;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #ffffff;
+}
+
+.message, 
+.SingIn {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline rgb(5, 5, 122);
+}
+
+.signin a {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+}
+
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #181818;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: rgb(255, 255, 255);
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #555454;
+}
+
+.submit:hover {
+  background-color: #61616196;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+
+.forlogin{
+  background-color: rgb(149, 152, 101);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+@media screen and (max-width:860px) {
+    
+    .burger{
+        display: block;
+    }
+    nav{
+       
+        transition: 0.4s;
+        position: absolute;
+        background-color: rgb(216, 215, 215);
+        width: 100%;
+        height: 100vh;
+        left: -100vw;
+        top: 0;
+        justify-content: center;
+
+        align-items: center;
+        text-align: center;
+      gap: 10px;
+        
+    
+    }
+    nav a{
+      
+      margin-top: 100px;
+      font-size: 30px;
+    }
+}
+@media screen and (max-width:860px){
+  .inthird{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width:860px){
+
+  .suratebi{
+     grid-template-columns: 300px;
+     grid-template-areas: 
+     
+     'pirvelisu pirvelisu'
+     'pirvelisu pirvelisu'
+  'meoresu meoresu'
+  'meoresu meoresu'
+  'mesamesu mesamesu'
+  'mesamesu mesamesu'
+  'mexutesu mexutesu'
+  'mexutesu mexutesu'
+  'meeqvsesu meeqvsesu'
+  'meeqvsesu meeqvsesu'
+  'meshvidesu meshvidesu'
+  'meshvidesu meshvidesu'
+  'meotxesu meotxesu'
+  'meotxesu meotxesu'
+  
+     
+     
+     ;
+  }
+}
+
+
+
+@media screen and (max-width:860px){
+
+
+  .PUREMENT ul{
+    display: none;
+  }
+}
