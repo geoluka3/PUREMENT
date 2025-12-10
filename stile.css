@@ -356,16 +356,16 @@ font-size: 20px;
 }
 
 .about p{
-  margin-top: 50px;
+  margin-top: 65px;
   
 }
 .about h2{
-  margin-top: 50px;
+  margin-top: 65px;
   font-size: 60px;
 
 }
 .about img{
-  margin-top: 40px;
+  margin-top: 50px;
   max-width: 100px;
   height: 100px;
 }
@@ -569,6 +569,9 @@ li a{
   color: rgb(255, 255, 255);
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 .flex {
   display: flex;
@@ -657,7 +660,7 @@ li a{
 
 
 
-@media screen and (max-width:860px) {
+@media screen and (max-width:730px) {
     
     .burger{
         display: block;
@@ -685,13 +688,13 @@ li a{
       font-size: 30px;
     }
 }
-@media screen and (max-width:860px){
+@media screen and (max-width:730px){
   .inthird{
     grid-template-columns: 1fr;
   }
 }
 
-@media screen and (max-width:860px){
+@media screen and (max-width:730px){
 
   .suratebi{
      grid-template-columns: 300px;
@@ -715,6 +718,8 @@ li a{
      
      
      ;
+
+     
   }
 }
 
